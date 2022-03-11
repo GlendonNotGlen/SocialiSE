@@ -61,9 +61,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#features">Problem</a></li>
-            <li><a class="nav-link scrollto" href="#about">Solution</a></li>
-            <li><a class="nav-link scrollto" href="#values">Features</a></li>
+            <li><a class="nav-link scrollto" href="#about">Aim</a></li>
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
             <li>
               <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
@@ -72,6 +70,30 @@
             <!-- <li><a href="blog.html">Blog</a></li> -->
             <li><a href="viewquestions.html">View Questions</a></li>
             <li><a href="submission.html">Ask a Question</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <li>
               <a class="getstarted scrollto" href="#about">Get Started</a>
@@ -94,6 +116,9 @@
               Social Enterprises <br />
               to Consultants
             </h1>
+            <!-- <h2 data-aos="fade-up" data-aos-delay="400">
+              We are team of talented designers making websites with Bootstrap
+            </h2> -->
             <div data-aos="fade-up" data-aos-delay="600">
               <div class="text-center text-lg-start">
                 <a
@@ -119,73 +144,6 @@
     <!-- End Hero -->
 
     <main id="main">
-      <!-- ======= Features Section ======= -->
-      <section id="features" class="features">
-        <div class="container" data-aos="fade-up">
-          <!-- Feature Tabs -->
-          <div class="row feture-tabs" data-aos="fade-up">
-            <div id="problem" class="col-lg-6">
-              <h3>The Problem faced by Social Enterprises</h3>
-              <!-- Tabs -->
-              <ul class="nav nav-pills mb-3">
-                <li>
-                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1"
-                    >Need for Professional and Support Services</a
-                  >
-                </li>
-              </ul>
-              <!-- End Tabs -->
-              <!-- Tab Content -->
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab1">
-                  <p>
-                    When the business landscape due to Covid has drastically
-                    changed, some social enterprises will need mentorship and
-                    support to help them navigate through the uncertain times.
-                    <br />
-                    However, without a large network and with many consultants
-                    with different fields of expertise, social enterprises may
-                    find it hard to get the right mentor.
-                  </p>
-                  <div class="d-flex align-items-center mb-2">
-                    <i class="bi bi-check2"></i>
-                    <h4>Current Solution</h4>
-                  </div>
-                  <p>
-                    raiSE Singapore has Fellowship programme that matches social
-                    enterprises to suitable mentors or fellows. Social
-                    enterprises can simply register their interest via the
-                    google form provided and get matched.
-                  </p>
-                  <div class="d-flex align-items-center mb-2">
-                    <i class="bi bi-check2"></i>
-                    <h4>Issues with Current Solution</h4>
-                  </div>
-                  <p>
-                    <strong>1. </strong> The google form does not allow mentors
-                    and consultants to view the social enterprises in a visually
-                    appealing way.<br />
-                    <strong>2. </strong> They cannot choose how to filter social
-                    enterprises based on their preferences or expertise easily.
-                    There is much overhead for raiSE staff to manually tabulate
-                    the data and share with the mentors and consultants. <br />
-                    <strong>3. </strong> Hard to scale when there are many
-                    social enterprises and many consultants
-                  </p>
-                </div>
-                <!-- End Tab 1 Content -->
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <img src="assets/img/features-2.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-          <!-- End Feature Tabs -->
-        </div>
-      </section>
-      <!-- End Features Section -->
-
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
@@ -196,18 +154,22 @@
               data-aos-delay="200"
             >
               <div class="content">
-                <h3>Our Solution</h3>
+                <h3>Aim</h3>
                 <h2>Building resilience among Social Enterprises</h2>
                 <p>
                   In SocialiSE, our aim is to bridge the gap between social
                   enterprises and consultancy firms to give them the support
-                  they need. This is done through a
-                  <strong>web app </strong>that allows social enterprises to
-                  <strong
-                    >post their problems and have mentors choose which problem
-                    they want to help.</strong
-                  >
+                  they need. This is done through a web app
                 </p>
+                <!-- <div class="text-center text-lg-start">
+                  <a
+                    href="#"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
+                  >
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div> -->
               </div>
             </div>
 
@@ -279,6 +241,380 @@
         </div>
       </section>
       <!-- End Values Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <!-- <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="232"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="521"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Projects</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-headset" style="color: #15be56"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="1463"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Hours Of Support</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-people" style="color: #bb0852"></i>
+                <div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>Hard Workers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Counts Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <!-- <header class="section-header">
+            <h2>Features</h2>
+            <p>Laboriosam et omnis fuga quis dolor direda fara</p>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/img/features.png" class="img-fluid" alt="" />
+            </div> -->
+
+          <!-- <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+              <div class="row align-self-center gy-4">
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Eos aspernatur rem</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Facilis neque ipsa</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Volup amet voluptas</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Rerum omnis sint</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Alias possimus</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>Repellendus mollitia</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- / row -->
+
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3>The Problem faced by Social Enterprises</h3>
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1"
+                    >Need for Professional and Support Services</a
+                  >
+                </li>
+                <!-- <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab2"
+                    >Current Solutions</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab3"
+                    >What current solutions lack</a
+                  >
+                </li> -->
+              </ul>
+              <!-- End Tabs -->
+
+              <!-- Tab Content -->
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>
+                    When the business landscape due to Covid has drastically
+                    changed, some social enterprises will need mentorship and
+                    support to help them navigate through the uncertain times.
+                    <br />
+                    However, without a large network and with many consultants
+                    with different fields of expertise, social enterprises may
+                    find it hard to get the right mentor.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Current Solution</h4>
+                  </div>
+                  <p>
+                    raiSE Singapore has Fellowship programme that matches social
+                    enterprises to suitable mentors or a fellow. Social
+                    enterprises can simply register their interest via the
+                    google form provided and get matched.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Issues with Current Solution</h4>
+                  </div>
+                  <p>
+                    <strong>1. </strong> The google form does not allow mentors
+                    and consultants to view the social enterprises in a visually
+                    appealing way.<br />
+                    <strong>2. </strong> They cannot choose how to filter social
+                    enterprises based on their preferences or expertise easily.
+                    There is much overhead for raiSE staff to manually tabulate
+                    the data and share with the mentors and consultants. <br />
+                    <strong>3. </strong> Hard to scale when there are many
+                    social enterprises and many consultants
+                  </p>
+                </div>
+                <!-- End Tab 1 Content -->
+
+                <!-- <div class="tab-pane fade show" id="tab2">
+                  <p>
+                    Consequuntur inventore voluptates consequatur aut vel et.
+                    Eos doloribus expedita. Sapiente atque consequatur minima
+                    nihil quae aspernatur quo suscipit voluptatem.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>
+                      Repudiandae rerum velit modi et officia quasi facilis
+                    </h4>
+                  </div>
+                  <p>
+                    Laborum omnis voluptates voluptas qui sit aliquam
+                    blanditiis. Sapiente minima commodi dolorum non eveniet
+                    magni quaerat nemo et.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  </div>
+                  <p>
+                    Non quod totam minus repellendus autem sint velit. Rerum
+                    debitis facere soluta tenetur. Iure molestiae assumenda sunt
+                    qui inventore eligendi voluptates nisi at. Dolorem quo
+                    tempora. Quia et perferendis.
+                  </p>
+                </div>
+                <!-- End Tab 2 Content -->
+
+                <!-- <div class="tab-pane fade show" id="tab3">
+                  <p>
+                    Consequuntur inventore voluptates consequatur aut vel et.
+                    Eos doloribus expedita. Sapiente atque consequatur minima
+                    nihil quae aspernatur quo suscipit voluptatem.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>
+                      Repudiandae rerum velit modi et officia quasi facilis
+                    </h4>
+                  </div>
+                  <p>
+                    Laborum omnis voluptates voluptas qui sit aliquam
+                    blanditiis. Sapiente minima commodi dolorum non eveniet
+                    magni quaerat nemo et.
+                  </p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  </div>
+                  <p>
+                    Non quod totam minus repellendus autem sint velit. Rerum
+                    debitis facere soluta tenetur. Iure molestiae assumenda sunt
+                    qui inventore eligendi voluptates nisi at. Dolorem quo
+                    tempora. Quia et perferendis.
+                  </p>
+                </div> -->
+                <!-- End Tab 3 Content -->
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <img src="assets/img/features-2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <!-- End Feature Tabs -->
+
+          <!-- Feature Icons -->
+          <div class="row feature-icons" data-aos="fade-up">
+            <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
+
+            <div class="row">
+              <div
+                class="col-xl-4 text-center"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <img
+                  src="assets/img/features-3.png"
+                  class="img-fluid p-4"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-xl-8 d-flex content">
+                <div class="row align-self-center gy-4">
+                  <div class="col-md-6 icon-box" data-aos="fade-up">
+                    <i class="ri-line-chart-line"></i>
+                    <div>
+                      <h4>Corporis voluptates sit</h4>
+                      <p>
+                        Consequuntur sunt aut quasi enim aliquam quae harum
+                        pariatur laboris nisi ut aliquip
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <i class="ri-stack-line"></i>
+                    <div>
+                      <h4>Ullamco laboris nisi</h4>
+                      <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <i class="ri-brush-4-line"></i>
+                    <div>
+                      <h4>Labore consequatur</h4>
+                      <p>
+                        Aut suscipit aut cum nemo deleniti aut omnis. Doloribus
+                        ut maiores omnis facere
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <i class="ri-magic-line"></i>
+                    <div>
+                      <h4>Beatae veritatis</h4>
+                      <p>
+                        Expedita veritatis consequuntur nihil tempore laudantium
+                        vitae denat pacta
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <i class="ri-command-line"></i>
+                    <div>
+                      <h4>Molestiae dolor</h4>
+                      <p>
+                        Et fuga et deserunt et enim. Dolorem architecto ratione
+                        tensa raptor marte
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <i class="ri-radar-line"></i>
+                    <div>
+                      <h4>Explicabo consectetur</h4>
+                      <p>
+                        Est autem dicta beatae suscipit. Sint veritatis et sit
+                        quasi ab aut inventore
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Feature Icons -->
+        </div>
+      </section>
+      <!-- End Features Section -->
 
       <!-- ======= Services Section ======= -->
       <section id="services" class="services">
