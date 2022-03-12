@@ -5,11 +5,12 @@ const addData = (ev)=>{
     ev.preventDefault();  //to stop the form submitting
     capturedTitle = document.getElementById('title').value;
     capturedBody = document.getElementById('body').value;
-    capturedAAH = document.getElementById('Agriculture and Animal Husbandry').checked;
-    capturedAC = document.getElementById('Arts and Cultre').checked;
-    capturedBW = document.getElementById('Beauty and Wellness').checked;
-    capturedBC = document.getElementById('Business Consultancy').checked;
-    capturedCRE = document.getElementById('Construction and Real Estate').checked;
+    capturedBS = document.getElementById('Business Strategy').checked;
+    capturedOM = document.getElementById('Operations Management').checked;
+    capturedIT = document.getElementById('IT/Digital Solutions').checked;
+    capturedBM = document.getElementById('Branding and Marketing').checked;
+    capturedF = document.getElementById('Finance').checked;
+    capturedET = document.getElementsByName('engagement type');
     if (capturedTitle == "" || capturedBody == ""){
         alert("Remember to fill in all fields!")
     } else {
@@ -17,11 +18,12 @@ const addData = (ev)=>{
         id: Date.now(),
         title: capturedTitle,
         body: capturedBody,
-        AAH: capturedAAH,
-        AC: capturedAC,
-        BW:capturedBW,
-        BC:capturedBC,
-        CRE:capturedCRE
+        BS: capturedBS,
+        OM: capturedOM,
+        IT: capturedIT,
+        BM: capturedBM,
+        F : capturedF,
+        ET: getRadioValue()
     }
     data.push(info);
     document.forms[0].reset(); // to clear the form for the next entries
@@ -37,6 +39,14 @@ const addData = (ev)=>{
     // document.getElementById('tags').reset();
     }
 }
+
+function getRadioValue() {
+            for(i = 0; i < capturedET.length; i++) {
+                if(capturedET[i].checked)
+                    return capturedET[i].value
+            }
+}
+
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('btn').addEventListener('click', addData);
 });
