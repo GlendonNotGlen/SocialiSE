@@ -1142,6 +1142,22 @@ section {
   padding: 0;
 }
 
+.portfolio-details .selections {
+  outline: 5px;
+  flex: 1 0 0%;
+}
+
+.portfolio-details .selection-box{
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  flex: 1 0 0%;
+  margin: 12px;
+  padding 1px 0px 1px 0px;
+}
+
+.portfolio-details .row:last-child{
+  padding-top: 15px;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
