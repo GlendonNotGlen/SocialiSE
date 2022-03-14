@@ -1,10 +1,14 @@
-function login() {
-    //alert("test")
-    signInWithEmailAndPassword(auth, email, password)
+function login(ev) {
+  //alert("test")
+  ev.preventDefault();
+  email = document.getElementById("email_field").value;
+  password = document.getElementById("password_field").value;
+  auth
+    .signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      // Signed in 
+      // Signed in
       const user = userCredential.user;
-      alert("Logged in!")
+      alert("Logged in!");
       // ...
     })
     .catch((error) => {
@@ -12,6 +16,8 @@ function login() {
       const errorMessage = error.message;
       alert(errorMessage);
     });
-  
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btn").addEventListener("click", login);
+});

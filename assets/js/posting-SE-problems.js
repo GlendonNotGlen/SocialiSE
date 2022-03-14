@@ -38,7 +38,6 @@ function getRadioValue() {
     if (capturedET[i].checked) return capturedET[i].value;
   }
 }
-
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btn").addEventListener("click", addData);
 });
