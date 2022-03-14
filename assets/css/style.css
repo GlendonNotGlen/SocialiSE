@@ -1147,15 +1147,15 @@ section {
   flex: 1 0 0%;
 }
 
-.portfolio-details .selection-box{
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+.portfolio-details .selection-box {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
   flex: 1 0 0%;
   margin: 12px;
-  padding 1px 0px 1px 0px;
+  padding: 1px 0px 1px 0px;
 }
 
-.portfolio-details .row:last-child{
+.portfolio-details .row:last-child {
   padding-top: 15px;
 }
 /*--------------------------------------------------------------
