@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Get Started - SocialiSE</title>
+  <title>Login - SocialiSE</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -60,7 +60,7 @@
       <!-- <li><a href="blog.html">Blog</a></li> -->
       <!-- <li><a href="viewquestions.html">View Questions</a></li>
       <li><a href="submission.html">Ask a Question</a></li> -->
-          <a class="getstarted scrollto" href="#">Get Started</a>
+          <a class="getstarted scrollto" href="Get-Started.html">Get Started</a>
       </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -78,9 +78,10 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Get started</li>
+          <li>Consultant</li>
+          <li>Login</li>
         </ol>
-        <h2>Get started</h2>
+        <h2>User Login</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -89,64 +90,49 @@
     <section id="features" class="features">
 
       <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <p>Be #PartOfTheGood</p>
-          <p>Are you a Consultant or Social Enterprise?</p>
-        </header>
-
-        
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
+  
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+  
         <div class="container" data-aos="fade-up">
-
-          <div class="row justify-content-center">
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-box blue">
-                <i class="ri-discuss-line icon"></i>
-                <h3>Consultants</h3>
-                <p>
-                  View challenges faced by our social enterprises and get
-                  matched with the ones you are best suited for!
-                </p>
-                <a href="./Consultant-Login.html" class="read-more"
-                  ><span>Login</span></a
-                >
-                <a href="./Apply.html" class="read-more"
-                  ><span>Register here!</span></a
-                >
-              </div>
+  
+          <header class="section-header">
+            <p>Welcome!</p>
+            <br>
+            <h2>To register for an account, please click <a href="Apply.html"><u>here</u></a></h2>
+            <h2>If you forgot your password, please contact a member of RaiSE.sg</h2>
+          </header>
+  
+          <div class="row gy-4">
+            
+            <div class="col-lg-12">
+              <form class="php-email-form">
+  
+                <div class="row gy-4">
+  
+                  <div class="col-md-6">
+                    <input type="email" id="email_field" name="email" class="form-control" placeholder="Your Email Address" required>
+                  </div>
+  
+                  <div class="col-md-6">
+                    <input type="password" id="password_field" class="form-control" name="password" placeholder="Password" required>
+                  </div>
+  
+                  <div class="col-md-12 text-center">
+  
+                    <button onclick="login()" type="submit">Login</button>
+                  </div>
+  
+                </div>
+              </form>
+  
             </div>
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-box orange">
-                <i class="ri-discuss-line icon"></i>
-                <h3>Social Enterprises</h3>
-                <p>
-                  Post your challenges and get matched with the best suited
-                  consultant from our network!
-                </p>
-                <br />
-                <a href="http://www.raise.sg/social-enterprises/be-a-member-menu/membership-portal.html" class="read-more"
-                  ><span>Login</span></a
-                >
-                <a href="submission.html" class="read-more"
-                  ><span>Post your challenges!</span></a
-                >
-              </div>
-            </div>
+  
           </div>
+  
         </div>
-      </section>
-      <!-- End Services Section -->
+  
+      </section><!-- End Contact Section -->
   
       <!-- ======= Footer ======= -->
       <footer id="footer" class="footer">
@@ -195,12 +181,13 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <!-- Template Submissions JS File -->
-  <script src="assets/js/Apply.js"></script>
+  <script src="assets/js/login.js"></script>
 
 </body>
 </html>
