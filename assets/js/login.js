@@ -9,7 +9,7 @@ function login(ev) {
       // Signed in
       const user = userCredential.user;
       alert("Logged in!");
-      // ...
+      window.location.href = "https://socialise.netlify.app/view-se";
     })
     .catch((error) => {
       const errorCode = error.code;
